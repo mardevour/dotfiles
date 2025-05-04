@@ -1,0 +1,279 @@
+@define-color accent_color #BD93F9;
+@define-color accent_bg_color #BD93F9;
+@define-color accent_fg_color #F8F8F2;
+@define-color destructive_color #FF5555;
+@define-color destructive_bg_color #FF5555;
+@define-color destructive_fg_color #F8F8F2;
+@define-color success_color #50FA7B;
+@define-color success_bg_color #50FA7B;
+@define-color success_fg_color #F8F8F2;
+@define-color warning_color #FFB86C;
+@define-color warning_bg_color #F1FA8C;
+@define-color warning_fg_color rgba(0, 0, 0, 0.8);
+@define-color error_color #FF5555;
+@define-color error_bg_color #FF5555;
+@define-color error_fg_color #F8F8F2;
+@define-color window_bg_color #1a1b23;
+@define-color window_fg_color #F8F8F2;
+@define-color view_bg_color #282a36;
+@define-color view_fg_color #F8F8F2;
+@define-color headerbar_bg_color #1a1b23;
+@define-color headerbar_fg_color #F8F8F2;
+@define-color headerbar_border_color #F8F8F2;
+@define-color headerbar_backdrop_color @window_bg_color;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.07);
+@define-color card_bg_color #282a36;
+@define-color card_fg_color #F8F8F2;
+@define-color card_shade_color rgba(0, 0, 0, 0.07);
+@define-color dialog_bg_color #1a1b23;
+@define-color dialog_fg_color #F8F8F2;
+@define-color popover_bg_color #1a1b23;
+@define-color popover_fg_color #F8F8F2;
+@define-color shade_color rgba(0, 0, 0, 0.07);
+@define-color scrollbar_outline_color #ffffff;
+@define-color blue_1 #99c1f1;
+@define-color blue_2 #62a0ea;
+@define-color blue_3 #3584e4;
+@define-color blue_4 #1c71d8;
+@define-color blue_5 #1a5fb4;
+@define-color green_1 #8ff0a4;
+@define-color green_2 #57e389;
+@define-color green_3 #33d17a;
+@define-color green_4 #2ec27e;
+@define-color green_5 #26a269;
+@define-color yellow_1 #f9f06b;
+@define-color yellow_2 #f8e45c;
+@define-color yellow_3 #f6d32d;
+@define-color yellow_4 #f5c211;
+@define-color yellow_5 #e5a50a;
+@define-color orange_1 #ffbe6f;
+@define-color orange_2 #ffa348;
+@define-color orange_3 #ff7800;
+@define-color orange_4 #e66100;
+@define-color orange_5 #c64600;
+@define-color red_1 #f66151;
+@define-color red_2 #ed333b;
+@define-color red_3 #e01b24;
+@define-color red_4 #c01c28;
+@define-color red_5 #a51d2d;
+@define-color purple_1 #dc8add;
+@define-color purple_2 #c061cb;
+@define-color purple_3 #9141ac;
+@define-color purple_4 #813d9c;
+@define-color purple_5 #613583;
+@define-color brown_1 #cdab8f;
+@define-color brown_2 #b5835a;
+@define-color brown_3 #986a44;
+@define-color brown_4 #865e3c;
+@define-color brown_5 #63452c;
+@define-color light_1 #ffffff;
+@define-color light_2 #f6f5f4;
+@define-color light_3 #deddda;
+@define-color light_4 #c0bfbc;
+@define-color light_5 #9a9996;
+@define-color dark_1 #77767b;
+@define-color dark_2 #5e5c64;
+@define-color dark_3 #3d3846;
+@define-color dark_4 #241f31;
+@define-color dark_5 #000000;
+
+
+.xfce4-panel#XfcePanelWindow {
+    background-color: transparent;
+    border: none;
+}
+.xfce4-panel {
+    border: none;
+    border-radius: 0px;
+    color: transparent;
+    background-color: transparent;
+}
+
+#whiskermenu-button,
+#xfce-panel-toggle-button,
+.systray-6,
+#sn-button,
+#xfce4-notification-plugin,
+#pulseaudio-button,
+#clock-button,
+#actions-button
+{
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px -5px 5px/*, rgba(0, 0, 0, 0.7) 0px -5px 6px*/;
+}
+
+
+#xfce4-notification-plugin,
+#xfce4-power-manager-plugin {
+    background: transparent;
+}
+
+#whiskermenu-button:checked,
+#xfce-panel-toggle-button:checked,
+.systray-6:checked,
+#sn-button:checked,
+#xfce4-notification-plugin:checked,
+#xfce4-power-manager-plugin:checked
+{
+    background: #44475A;
+    border-bottom: 2px solid #50FA7B;
+    border-top: 1px solid #626681;
+}
+
+#whiskermenu-button:hover,
+#xfce-panel-toggle-button:checked,
+.systray-6:hover,
+#sn-button:hover,
+#xfce4-notification-plugin:hover,
+#pulseaudio-button:hover,
+#clock-button:hover,
+#actions-button:hover {
+	background: #44475A;
+}
+
+#whiskermenu-button {
+background-color: transparent;
+    border: solid 2px #FFB86C;
+    color: #FFB86C;
+
+    border-radius: 2px 2px 15px 2px;
+
+    margin-left: 5px;
+    margin-right: 10px;
+
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    /*max-width: 10px;*/
+
+    box-shadow: 0 0 1px #FFB86C, 0 0 2px #FFB86C;
+    text-shadow: 0 0 1px #FFB86C, 0 0 3px #FFB86C;
+}
+#whiskermenu-button:checked {
+	border-color: #50FA7B;
+	color: #50FA7B;
+	box-shadow: 0 0 1px #50FA7B, 0 0 2px #50FA7B;
+	text-shadow: 0 0 1px #50FA7B, 0 0 3px #50FA7B;
+}
+
+wnck-pager {
+	color: #44475A;
+}
+
+#xfce-panel-toggle-button {
+	border-radius: 3px;
+	border: none;
+}
+
+.tasklist button {
+	border-radius: 0px;
+	border: 2px solid #6272A4;
+	/*box-shadow: 0 0 1px #BD93F9, 0 0 2px #BD93F9;*/
+	background: transparent;    
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-left: 1px;
+	padding-right: 3px;
+}
+.tasklist button:checked {
+	border: 2px solid #BD93F9;
+	box-shadow: 0 0 1px #BD93F9, 0 0 2px #BD93F9;
+}
+.systray-6 {
+	margin-left: 0px;
+	padding-left: 8px;
+	padding-right: 7px;
+}
+
+#sn-button {
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#xfce4-notification-plugin {
+margin-left: 0px;
+margin-right: 2px;
+padding-left: 8px;
+padding-right: 7px;
+}
+
+#pulseaudio-button {
+    background-color: transparent;
+    border: solid 2px #FFB86C;
+    color: #FFB86C;
+
+    border-radius: 7px 2px 7px 2px;
+    box-shadow: 0 0 1px #f69308, 0 0 2px #f69308;
+
+    margin-left: 2px;
+    margin-right: 3px;
+    padding-left: 8px;
+    padding-right: 7px;
+}
+#pulseaudio-button:checked {
+    color: #50FA7B;
+    border-color: #50FA7B;
+    box-shadow: 0 0 1px #50FA7B, 0 0 2px #50FA7B;
+}
+
+#clock-button {
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    min-width: 45px;
+
+    margin-left: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 5px;
+}
+#clock-button label {
+    color: #FF5555;
+    /*text-shadow: 0 0 4px #8BE9FD;*/
+    /*text-shadow: 0 0 4px rgba(139, 233, 253, 0.7);*/
+    /*text-shadow: 0 0 4px rgba(80, 250, 123, 0.7);*/
+    text-shadow: 0 0 4px rgba(255, 85, 85, 0.7);
+}
+#clock-button:checked {
+    background: #44475A;
+    border-bottom: 2px solid #FFB86C;
+    border-right: 2px solid #FFB86C;
+    border-top: 1px solid #626681;
+}
+
+#actions-button {
+    background-color: transparent;
+    border: solid 2px #FFB86C;
+    color: #FFB86C;
+
+    border-radius: 7px 2px 7px 2px;
+
+    /*padding-bottom: 2px;*/
+
+    box-shadow: 0 0 1px #FFB86C, 0 0 2px #FFB86C;
+    text-shadow: 0 0 1px #FFB86C, 0 0 3px #FFB86C;
+
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-bottom: 1px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+#actions-button:checked {
+    color: #FF5555;
+    border-color: #FF5555;
+    box-shadow: 0 0 1px #FF5555, 0 0 2px #FF5555;
+    text-shadow: 0 0 1px #FF5555, 0 0 3px #FF5555;
+}
+@import 'colors.css';

@@ -1,0 +1,82 @@
+'$schema' = "https://starship.rs/config-schema.json"
+
+add_newline = false
+
+palette = "macchiato"
+
+format = """
+[╭╴](purple)\
+$sudo\
+$username\
+$directory\
+$git_branch\
+$git_status\
+\n$character"""
+
+[palettes.dracula]
+grey = "#282a36"
+greylight = "#44475A"
+white = "#F8F8F2"
+blue = "#6272A4"
+cyan = "#8BE9FD"
+green = "#50FA7B"
+orange = "#FFB86C"
+pink = "#FF79C6"
+purple = "#BD93F9"
+red = "#ff4151"
+yellow = "#F1FA8C"
+
+[palettes.macchiato]
+grey = "#939ab7"
+greylight = "#b7bdf8"
+white = "#cad3f5"
+blue = "#8aadf4"
+cyan = "#7dc4e4"
+green = "#a6da95"
+orange = "#f5a97f"
+pink = "#f5bde6"
+purple = "#c6a0f6"
+red = "#ed8796"
+yellow = "#eed49f"
+
+[package]
+disabled = true
+
+[character]
+format = "[╰╴$symbol](purple)"
+error_symbol = "[ ](bold red)"
+success_symbol = "[ ](bold yellow)"
+vimcmd_symbol = "[❮](bold green)"
+vimcmd_visual_symbol = "[❮](bold yellow)"
+vimcmd_replace_symbol = "[❮](bold purple)"
+vimcmd_replace_one_symbol = "[❮](bold purple)"
+
+[sudo]
+style = "fg:red"
+symbol = "󱞾 "
+format = "[$symbol]($style)"
+disabled = false
+
+[username]
+show_always = true
+format = "[󰣇 $user](bold purple)"
+
+[directory]
+format = "[ $path](bold green)"
+home_symbol = "  ~"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Git" = " Git"
+".dotfiles" = " dotfiles"
+".config" = " config"
+"Music" = " Music"
+"Pictures" = " Pictures"
+"Documents" = "󰈙 Documents"
+"Downloads" = " Downloads"
+
+[git_branch]
+symbol = ""
+style = "bg:green"
+format = '[ $symbol $branch ](bold pink)'

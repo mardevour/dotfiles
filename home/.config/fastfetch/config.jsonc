@@ -1,0 +1,70 @@
+// Inspired by Catnap
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "none",
+        "padding": {
+            "top": 1,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "key": " ",
+            "type": "custom"
+        },
+        {
+            "key": " ",
+            "type": "custom"
+        },
+        {
+            "key": "{#36}╭─ {#35} ",
+            "type": "title"
+        },
+        {
+            "key": "{#36}├─ {#34}󰣇 ",
+            "type": "os"
+        },
+        {
+            "format": "{#36}├─ {#31}󰃰  {#1}{#37}{result} {#0}{#37}días",
+            "type": "command",
+            "text": "/home/mar/.scripts/tiempo_desde_instalacion.sh",
+            "key": " "
+        },
+        {
+            "key": "{#36}├─ {#32} ",
+            "type": "kernel"
+        },
+        {
+            "key": "{#36}├─ {#33}󱑎 ",
+            "type": "uptime"
+        },
+        {
+            "key": "{#36}├─ {#36} ",
+            "type": "packages"
+        },
+        {
+            "key": "{#36}├─ {#35}󰇄 ",
+            "type": "de"
+        },
+        {
+            "key": "{#36}├─ {#36} ",
+            "type": "wm"
+        },
+        {
+            "key": "{#36}├─ {#32} ",
+            "type": "terminal"
+        },
+        {
+            "key": "{#36}├─ {#31} ",
+            "type": "shell"
+        },
+        {
+            "key": "{#36}╰─ {#33}󰏘  {#30}󰐝 {#31}󰐝 {#32}󰐝 {#33}󰐝 {#34}󰐝 {#35}󰐝 {#36}󰐝 {#37}󰐝 ",
+            "type": "custom"
+        }
+    ]
+}

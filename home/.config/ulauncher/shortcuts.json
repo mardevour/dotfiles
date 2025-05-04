@@ -1,0 +1,22 @@
+{
+    "fff4a399-2f6f-4cbf-ac7b-3e3db8d42269": {
+        "id": "fff4a399-2f6f-4cbf-ac7b-3e3db8d42269",
+        "name": "Ecosia",
+        "keyword": "eco",
+        "cmd": "https://www.ecosia.org/search?q=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1735429824.124441
+    },
+    "181fe7f0-c1bb-444d-818d-2d01ff0965ee": {
+        "id": "181fe7f0-c1bb-444d-818d-2d01ff0965ee",
+        "name": "YT",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": null,
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1735431303.2051933
+    }
+}

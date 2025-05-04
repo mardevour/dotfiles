@@ -1,0 +1,23 @@
+{
+    "com.github.pascalbe-dev.ulauncher-repo-opener": {
+        "id": "com.github.pascalbe-dev.ulauncher-repo-opener",
+        "url": "https://github.com/pascalbe-dev/ulauncher-repo-opener",
+        "updated_at": "2024-12-29T01:03:28.063564",
+        "last_commit": "e72ec2961270c32d5b15192abbfc77020f37bbcc",
+        "last_commit_time": "2024-01-29T09:18:00"
+    },
+    "com.github.eckhoff42.ulauncher-md-table-generator": {
+        "id": "com.github.eckhoff42.ulauncher-md-table-generator",
+        "url": "https://github.com/Eckhoff42/Ulauncher-MD-table-generator",
+        "updated_at": "2024-12-29T01:06:13.334122",
+        "last_commit": "578e4e98b297b6d2565731148c497ea8c4a6c36c",
+        "last_commit_time": "2022-05-18T14:23:21"
+    },
+    "com.github.ulauncher.ulauncher-emoji": {
+        "id": "com.github.ulauncher.ulauncher-emoji",
+        "url": "https://github.com/Ulauncher/ulauncher-emoji",
+        "updated_at": "2024-12-29T01:19:13.707275",
+        "last_commit": "827cfe5e1d2f89f742f811f981759787b0654fa9",
+        "last_commit_time": "2023-11-04T18:37:13"
+    }
+}
