@@ -2,11 +2,15 @@
 # ~/.bashrc
 #
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
 # ALIAS
 alias ls='lsd -lA'
 alias grep='grep --color=auto'
 alias z='zoxide'
 alias zed='zeditor'
+alias nv='nvim'
 
 # git alias
 # alias commit='~/.scripts/git/commit.sh'
@@ -15,11 +19,6 @@ alias add='git add *'
 alias commit='git commit'
 alias commitm='git commit -m'
 alias push='git push'
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-# env vars
 
 # fzf colors
 export FZF_DEFAULT_OPTS=" \
