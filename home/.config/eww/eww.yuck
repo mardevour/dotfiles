@@ -1,0 +1,108 @@
+(defwindow bar
+  :class "bar"
+  :stacking "bg"
+  :windowtype "dock"
+  :reserve (struts
+    :distance "30px"
+    :side "top")
+  :geometry (geometry
+    :y "4px"
+    :width "1349px"
+    :height "20px"
+    :anchor "top center")
+  ;; (label :text time)) ;;
+  (panel)
+)
+
+;; bar (panel) ;;
+(defwidget panel []
+  (box :class "panel"
+      :orientation "h"
+      (left)
+      (middle)
+      (right)
+  )
+)
+
+;; LEFT 
+(defwidget left []
+  (box :orientation "h"
+    :halign "start"
+    (workspaces)
+  )
+)
+
+;; MIDDLE 
+(defwidget middle []
+  (box :orientation "h"
+    :class "middle"
+    (time)
+  )
+)
+
+;; RIGHT 
+(defwidget right []
+  (box :orientation "h"
+    :halign "end"
+    (tray)
+    (power_button)
+  )
+)
+
+;; workspaces
+(defwidget workspaces []
+  (literal :orientation "h"
+    :content workspace)
+  )
+(deflisten workspace 
+  :class "workspace"
+  "scripts/workspaces"
+)
+
+;; date time
+(defwidget time []
+  (box :class "time"
+    (label :text date)
+  )
+)
+(defpoll date 
+  :class "date"
+  :interval "1m"
+  `date +'%H:%M - %A, %d-%m-%y'`
+)
+
+;; systray
+(defwidget tray []
+  (box
+    :orientation "h"
+    :halign "center"
+    (systray
+      :class "tray"
+      :orientation "v"
+      :icon-size 16
+      :spacing 5)
+  )
+)
+
+;; volumen
+;; brillo
+;; power menu
+(defwidget power_button []
+  (eventbox
+    :bursor "pointer"
+    :tooltip "Sesión"
+    (button
+      :class "power-button"
+      :onclick "~/.config/eww/scripts/power"
+      (box
+        :orientation "h"
+        :halign "left"
+        :space-evenly false
+        (label :class "power-icon" :text "")
+        (label :class "power-label" :text "Sesión")
+      )
+    )
+  )
+)
+
+    

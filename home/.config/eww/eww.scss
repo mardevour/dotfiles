@@ -1,0 +1,119 @@
+@import '/home/mar/.cache/wal/colors.scss';
+ 
+$bg: #191919;
+
+* {
+  all: unset;
+}
+
+.bar {
+  background-color: transparent;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+.workspaces {
+  background-color: $bg;
+  border-radius: 18px;
+  border: 2px solid;
+  border-color: $color4;
+}
+.workspaces button {
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.ws-button1,
+.ws-button2,
+.ws-button3,
+.ws-button4,
+.ws-button5,
+.ws-button6,
+.ws-button7,
+.ws-button8,
+.ws-button9 {
+  color: $color15;
+  background-color: transparent;
+}
+.ws-button11,
+.ws-button22,
+.ws-button33,
+.ws-button44,
+.ws-button55,
+.ws-button66,
+.ws-button77,
+.ws-button88,
+.ws-button99 {
+  color: $color4;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.ws-button111,
+.ws-button222,
+.ws-button333,
+.ws-button444,
+.ws-button555,
+.ws-button666,
+.ws-button777,
+.ws-button888,
+.ws-button999 {
+  color: $color5;
+  background-color: transparent;
+}
+
+.time {
+  font-size: 16px;
+  background-color: $bg;
+  border-radius: 18px;
+  border: 2px solid;
+  border-color: $color4;
+}
+
+.tray {
+  background-color: $bg;
+  border: 2px solid;
+  border-color: $color4;
+}
+.tray menu {
+	border-radius: 10px;
+	padding: 5px 0px;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+	>menuitem {
+		padding: 0px 5px;
+
+		&:disabled label {
+			color: gray;
+		}
+
+		&:hover {
+			background-color: #0e4679;
+		}
+	}
+
+	separator {
+		background-color: #222222;
+		padding-top: 1px;
+
+		&:last-child {
+			padding: unset;
+		}
+	}
+}
+
+.power-button {
+  background-color: $bg;
+  border-radius: 18px;
+  border: 2px solid;
+  border-color: $color4;
+}
+.power-icon {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.power-label {
+  font-size: 16px; 
+  margin-right: 10px;
+  margin-left: 3px;
+}

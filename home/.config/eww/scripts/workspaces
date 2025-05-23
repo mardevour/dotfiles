@@ -1,0 +1,83 @@
+#!/bin/sh
+
+workspaces() {
+
+ws1=1
+ws2=2
+ws3=3
+ws4=4
+ws5=5
+ws6=6
+ws7=7
+ws8=8
+ws9=9
+
+# Unoccupied
+un="0"
+
+# check if Occupied
+o1=$(bspc query -D -d .occupied --names | grep "$ws1" )
+o2=$(bspc query -D -d .occupied --names | grep "$ws2" )
+o3=$(bspc query -D -d .occupied --names | grep "$ws3" )
+o4=$(bspc query -D -d .occupied --names | grep "$ws4" )
+o5=$(bspc query -D -d .occupied --names | grep "$ws5" )
+o6=$(bspc query -D -d .occupied --names | grep "$ws6" )
+o7=$(bspc query -D -d .occupied --names | grep "$ws7" )
+o8=$(bspc query -D -d .occupied --names | grep "$ws8" )
+o9=$(bspc query -D -d .occupied --names | grep "$ws9" )
+
+# check if Focused
+f1=$(bspc query -D -d focused --names | grep "$ws1" )
+f2=$(bspc query -D -d focused --names | grep "$ws2" )
+f3=$(bspc query -D -d focused --names | grep "$ws3" )
+f4=$(bspc query -D -d focused --names | grep "$ws4" )
+f5=$(bspc query -D -d focused --names | grep "$ws5" )
+f6=$(bspc query -D -d focused --names | grep "$ws6" )
+f7=$(bspc query -D -d focused --names | grep "$ws7" )
+f8=$(bspc query -D -d focused --names | grep "$ws8" )
+f9=$(bspc query -D -d focused --names | grep "$ws9" )
+
+# check if Urgent
+u1=$(bspc query -D -d .urgent --names | grep 1)
+u2=$(bspc query -D -d .urgent --names | grep 2)
+u3=$(bspc query -D -d .urgent --names | grep 3)
+u4=$(bspc query -D -d .urgent --names | grep 4)
+u5=$(bspc query -D -d .urgent --names | grep 5)
+u6=$(bspc query -D -d .urgent --names | grep 6)
+u7=$(bspc query -D -d .urgent --names | grep 7)
+u8=$(bspc query -D -d .urgent --names | grep 8)
+u9=$(bspc query -D -d .urgent --names | grep 9)
+
+icon1=" 󰊠"
+icon2="󱇪"
+icon3="󰓥"
+icon4=""
+icon5=""
+icon6="󰋑"
+icon7="?"
+icon8="󰝚 "
+icon9="󱎓 "
+
+echo 	"(box \
+    :class \"workspaces\" \
+    :orientation \"h\" \
+    :halign \"center\" \
+    :valign \"start\" \
+    (button :onclick \"bspc desktop -f ^$ws1\" :class \"ws-button$ws1$f1$u1\" \"$icon1\") \
+    (button :onclick \"bspc desktop -f ^$ws2\" :class \"ws-button$ws2$f2$u2\" \"$icon2\") \
+    (button :onclick \"bspc desktop -f ^$ws3\" :class \"ws-button$ws3$f3$u3\" \"$icon3\") \
+    (button :onclick \"bspc desktop -f ^$ws4\" :class \"ws-button$ws4$f4$u4\"	\"$icon4\") \
+    (button :onclick \"bspc desktop -f ^$ws5\" :class \"ws-button$ws5$f5$u5\" \"$icon5\") \
+    (button :onclick \"bspc desktop -f ^$ws6\" :class \"ws-button$ws6$f6$u6\" \"$icon6\") \
+    (button :onclick \"bspc desktop -f ^$ws7\" :class \"ws-button$ws7$f7$u7\" \"$icon7\") \
+    (button :onclick \"bspc desktop -f ^$ws8\" :class \"ws-button$ws8$f8$u8\" \"$icon8\") \
+    (button :onclick \"bspc desktop -f ^$ws9\" :class \"ws-button$ws9$f9$u9\" \"$icon9\"))"
+
+}
+
+workspaces
+bspc subscribe desktop node_transfer | while read -r _ ; do
+workspaces
+done
+
+
