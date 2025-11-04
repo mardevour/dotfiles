@@ -1,0 +1,8 @@
+plugin_dirs = ['/home/mar/.vst/vst']
+vst2_location = 'centralized'
+no_verify = false
+blacklist = []
+
+[last_known_config]
+wine_version = 'wine-9.21 (Staging)'
+yabridge_host_hash = -2113593175909883720

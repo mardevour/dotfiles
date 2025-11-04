@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="last-settings-migration-version" type="uint" value="1"/>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="837"/>
+    <property name="window-height" type="int" value="620"/>
+  </property>
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitor0" type="empty">
+        <property name="image-path" type="string" value="/home/mar/Imágenes/fondos/walls-catppuccin-mocha/grandfather-tree.jpg"/>
+        <property name="image-show" type="bool" value="true"/>
+        <property name="image-style" type="int" value="5"/>
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/mar/Imágenes/fondos/walls-catppuccin-mocha/kaiju.png"/>
+        </property>
+      </property>
+      <property name="monitorDVI-D-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/mar/Imágenes/fondos/walls-catppuccin-mocha/kaiju.png"/>
+          <property name="image-style" type="int" value="5"/>
+        </property>
+      </property>
+      <property name="monitorVGA-1-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/mar/Imágenes/fondos/walls-catppuccin-mocha/kaiju.png"/>
+          <property name="image-style" type="int" value="5"/>
+        </property>
+      </property>
+      <property name="monitorBelinea101536" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="last-image" type="string" value="/home/mar/Imágenes/fondos/walls-catppuccin-mocha/clearing.png"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="rgba1" type="array">
+            <value type="double" value="0.8784313725490196"/>
+            <value type="double" value="0.10588235294117647"/>
+            <value type="double" value="0.14117647058823529"/>
+            <value type="double" value="1"/>
+          </property>
+          <property name="color-style" type="int" value="3"/>
+        </property>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="40"/>
+    <property name="style" type="int" value="2"/>
+    <property name="use-custom-label-text-color" type="bool" value="true"/>
+    <property name="label-text-color" type="array">
+      <value type="double" value="0.93725490196078431"/>
+      <value type="double" value="0.94509803921568625"/>
+      <value type="double" value="0.96078431372549022"/>
+      <value type="double" value="1"/>
+    </property>
+  </property>
+</channel>

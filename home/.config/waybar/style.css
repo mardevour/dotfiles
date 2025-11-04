@@ -1,0 +1,158 @@
+@import url("/home/mar/.cache/wal/colors-waybar.css");
+
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	/*font-family: "JetBrainsMono Nerd Font";*/
+	font-size: 15px;
+	font-weight: 500;
+	color: @foreground;
+}
+
+#custom-notification {
+	font-family: "JetBrains Nerd Font";
+	margin: 0px 15px 0px 0px;
+}
+
+#waybar>box {
+	/* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
+	box-shadow: 5px 5px 5px 5px #151515;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+window#waybar {
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	border-radius: 0px;
+	/* border: 2px solid @accent; */
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: @color6;
+	background: @background;
+	background: alpha(@background, 0.7);
+}
+
+
+tooltip {
+	color: @foreground;
+	border-radius: 7px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+#workspaces {
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 9px;
+	transition: 0.2s ease;
+	padding-top: 1px;
+}
+
+
+#workspaces button {
+	all: unset;
+	margin: 0px 7px 0px 7px;
+	padding: 0px;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 9px;
+	transition: 0.2s ease;
+	/*   animation: ws_normal 20s ease-in-out 1; */
+}
+
+#workspaces button.active {
+	transition: all 0.3s ease;
+	/*  transition: all 0.4s cubic-bezier(.55,0.68,.48,1.682); */
+}
+
+#workspaces button:hover {
+	background: none;
+	animation: ws_hover 20s ease-in-out 1;
+	transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
+}
+
+#mpris {
+	margin: 1px 0px 0px 0px;
+}
+
+#tray {
+	margin-right: 10px;
+}
+
+/*
+#tray menu * {
+    min-height: 16px;
+    color: #9488e3;
+}
+
+#tray menu separator {
+    min-height: 10px
+}*/
+
+
+#custom-spacer {
+	opacity: 0;
+}
+
+#custom-smallspacer {
+	opacity: 0;
+}
+
+
+#custom-mouse {
+	margin-bottom: 6px;
+}
+
+#custom-pipewire {
+	color: @color6;
+	font-size: 17px;
+	margin: 1px 4px 0px 0px;
+}
+
+#pulseaudio {
+	font-size: 14px;
+	margin: 1px 0px 0px 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+#clock {
+	font-family: "JetBrains Mono Nerd Font";
+	opacity: 1;
+	margin: 1px 0px 0px 0px;
+	border: none;
+
+}
+
+#mpris {
+	animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-menu {
+	font-size: 15px;
+	opacity: 1;
+	margin: 1px 0px 0px 0px;
+}
+
+#custom-notifications,
+#custom-theme,
+#custom-menu {
+	margin: 0px 0px 0px 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+/* Style for launchers */
+#custom-expand {
+	min-width: 25px;
+}
+
+#group-minimized {
+	border-left: solid;
+	border-left-width: 0.5px;
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--
+  This is a very simple config file with many options missing. For a
+  complete set of options with comments, see Labwc docs/rc.xml.all
+-->
+<labwc_config>
+
+  <!-- PLACEMENT -->
+  <placement>
+    <policy>center</policy>
+  </placement>
+
+  <!-- WINDOW SWITCHER -->
+  <windowSwitcher show="yes" preview="yes" outlines="yes" allWorkspaces="no">
+    <fields>
+      <field content="icon" width="5%" />
+      <field content="title" width="95%" />
+    </fields>
+  </windowSwitcher>
+
+  <!-- FOCUS -->
+  <focus>
+    <followMouse>yes</followMouse>
+  </focus>
+
+  <!-- WORKSPACES -->
+  <desktops number="4" />
+
+  <!-- THEME -->
+  <theme>
+    <name>Aero-Mar</name>
+    <icon>Magog-Humanity-Mardevoir-v-.5.3</icon>
+    <cornerRadius>2</cornerRadius>
+    <font name="sans" size="10"/>
+    <titlebar><layout>icon:iconify,desk,max,close</layout></titlebar>
+    <dropShadows>yes</dropShadows>
+    <dropShadowsOnTiled>yes</dropShadowsOnTiled>
+  </theme>
+
+  <!-- KEYBOARD -->
+  <keyboard>
+    <default/>
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty"/>
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Execute" command="thunar"/>
+    </keybind>
+
+    <keybind key="W-Backspace">
+      <action name="Execute" command="rofi -show drun"/>
+    </keybind>
+
+    <keybind key="W-S-s">
+      <action name="Execute" command="flameshot gui"/>
+    </keybind>
+
+    <numlock>on</numlock>
+
+    <keybind key="W-q">
+      <action name="Close" />
+    </keybind>
+    <keybind key="W-Tab">
+      <action name="NextWindow" />
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleMaximize" />
+    </keybind>
+
+
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
+
+    <keybind key="W-S-1">
+      <action name="SendToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-S-2">
+      <action name="SendToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-S-3">
+      <action name="SendToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-S-4">
+      <action name="SendToDesktop" to="4" />
+    </keybind>
+  </keyboard>
+
+</labwc_config>

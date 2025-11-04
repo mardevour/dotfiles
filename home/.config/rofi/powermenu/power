@@ -1,0 +1,52 @@
+#! /bin/bash
+
+shutdown=''
+logout=''
+reboot=''
+
+
+uptime="`uptime -p | sed -e 's/up //g'`"
+host=`hostnamectl hostname`
+
+DISPLAY=:0
+XAUTHORITY=/home/mar/.Xauthority
+
+# Rofi CMD
+rofi_cmd() {
+	rofi -dmenu \
+	-p "Uptime: $uptime" \
+	-mesg "Uptime: $uptime" \
+	-theme /home/mar/.config/rofi/powermenu/default.rasi
+}
+
+# Confirmation CMD
+confirm_cmd() {
+	rofi -dmenu \
+		-p 'Confirmation' \
+		-mesg 'Are you Sure?' \
+		-theme /home/mar/.config/rofi/powermenu/confirm.rasi
+}
+
+# Ask for confirmation
+confirm_exit() {
+	echo -e "$yes\n$no" | confirm_cmd
+}
+
+# Pass variables to rofi dmenu
+run_rofi() {
+	echo -e "$logout\n$reboot\n$shutdown" | rofi_cmd
+}
+
+# Actions
+chosen="$(run_rofi)"
+case ${chosen} in
+	$shutdown)
+		systemctl poweroff
+        ;;
+	$reboot)
+		systemctl reboot
+        ;;
+	$logout)
+		niri msg action quit
+        ;;
+esac

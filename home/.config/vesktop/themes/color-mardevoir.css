@@ -1,0 +1,131 @@
+/**
+  * @name        colors - mardevoir
+  * @description my custom css for some tweaks to the ui
+  * @author      mardevoir
+  * @authorId    0
+  * @version     1.0.0
+  * @website     https://github.com/mardevour/css-styles
+  * @source      https://github.com/mardevour/css-styles
+  */
+
+:root {
+  --color-1: #1d1f30;
+  --color-2: #24273a;
+  --color-3: #363a4f;
+  --color-4: #494d64;
+  --brand: #a6d189;
+  --brand-2: #cad3f5;
+  --text: #cad3f5;
+
+  --green: #a6da95;
+  --red: #ed8796;
+  --orange: #f5a97f;
+
+  /*--color-1: #ecadad;
+   *   --color-2: #f0c2c2;
+   *   --color-3: #f0d4d4;
+   *   --brand: #de8989;
+   *   --brand-2: #c17777;*/
+
+  /* generic */
+  --bg-brand: var(--brand) !important;
+  --status-positive: var(--green) !important;
+
+  /* colors */
+  --brand-360: var(--brand) !important;
+  --brand-500: var(--brand) !important;
+  --blurple-50: var(--brand) !important;
+  --red-400: var(--red) !important;
+  --yellow-300: var(--orange) !important;
+  --yellow-360: var(--orange) !important;
+  --green-360:  var(--green) !important;
+
+  /* backgrounds */
+  --background-base-lowest: var(--color-1) !important;
+  --background-base-lower: var(--color-2) !important;
+  --background-base-low: var(--color-3) !important;
+  --bg-base-tertiary: var(--color-1) !important;
+  --background-primary: var(--color-3) !important;
+  --background-secondary: var(--color-2) !important;
+  --background-tertiary:  var(--color-1) !important;
+  --background-surface-higher: var(--color-3) !important;
+  --background-surface-high: var(--color-3) !important;
+  --background-secondary-alt: var(--color-3) !important;
+  --bg-mod-strong: var(--color-4) !important;
+  --button-danger-background: var(--red) !important;
+  --chat-background-default: var(--color-3) !important;
+  --card-primary-bg: var(--color-4) !important;
+  --custom-channel-members-bg: var(--color-1) !important;
+
+  /* texts */
+  --text-brand: var(--brand) !important;
+  --text-link: var(--brand) !important;
+  --text-positive: var(--green) !important;
+  --text-danger: var(--red) !important;
+  --button-outline-danger-text: var(--red) !important;
+  --channels-default: var(--text) !important;
+
+  /* misc */
+  --checkbox-background-checked: var(--brand) !important;
+  --checkbox-border-checked: var(--brand) !important;
+  --radio-bar-accent-color: var(--red) !important;
+  --channel-icon: var(--text) !important;
+
+  /* some backgrounds */
+  .theme-dark,
+  .theme-light {
+    background: none;
+  }
+  /* channel list */
+  .container__2637a {
+    background-color: transparent;
+  }
+  /* status bubble */
+  .container__37e49 {
+    background: var(--color-3) !important;
+  }
+  /* embedded mssage */
+  .embedFull__623de {
+    background: var(--background-secondary) !important;
+  }
+
+  /* some button backgrounds */
+  .addFriend__133bf {
+    background-color: var(--brand) !important;
+  }
+  .addFriend__133bf:hover {
+    background-color: var(--brand-2) !important;
+  }
+
+  /* texts */
+  .name__2ea32 {
+    color: var(--text);
+  }
+  .container__13cf1 {
+    color: var(--text);
+  }
+
+
+
+
+  /* toggle switch bg */
+  .container__87bf1 {
+    background-color: var(--color-4) !important;
+  }
+  .container__87bf1.checked__87bf1 {
+    background-color: var(--brand) !important;
+  }
+  .container__87bf1.checked__87bf1 path {
+    fill:  var(--brand) !important;
+  }
+
+  /* pill pattern microphone test */
+  div[class^=contentRegion] [id="voice-&-video-tab"] div[class^=micTest] svg[class^=notches] {
+    color: var(--color-3);
+  }
+
+  /* misc / fixes */
+  .sidebar_c48ade:after {
+    background: none !important;
+  }
+}

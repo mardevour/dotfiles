@@ -1,0 +1,33 @@
+/**
+  * @name        tweaks - mardevoir
+  * @description my custom css for changing the colors of the ui
+  * @author      mardevoir
+  * @authorId    0
+  * @version     1.0.0
+  * @website     https://github.com/mardevour/css-styles
+  * @source      https://github.com/mardevour/css-styles
+  */
+
+/* fonts */
+* {
+  font-family:
+    "Noto Sans",
+    "Noto Sans Symbols",
+    "Noto Sans Symbols2", "Noto Color Emoji",
+    "Symbola",
+    "Twemoji Mozilla",
+    "Noto Sans CJK JP",
+    sans-serif !important;
+
+  font-size: 16px !important;
+}
+
+/* some fixes */
+.scrollableContainer__74017 {
+  display: flex;
+  flex-direction: column;
+  min-height: 52px;
+}
+.channelTextArea_f75fb0 {
+  margin-bottom: 6px;
+}
